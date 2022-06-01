@@ -1,0 +1,225 @@
+@font-face {
+    font-family: Outfit-Regular;
+    src: url('Font/Outfit-Regular.woff2') format('woff2'),
+        url('Font/Outfit-Regular.woff') format('woff');
+}
+*{
+    font-family: Outfit-Regular;
+    color: white;
+    background-color: white;
+
+}
+a{
+    text-decoration: none;
+}
+h1,p,a{
+    background: none;
+}
+
+.PageGrid{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: fit-content;
+}
+#home-image{
+    border-radius: 10px 3px 3px 3px;
+} 
+
+#PorjectScrollGrid{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    /* border: 1px solid green; */
+}
+#LeftCollom{
+    margin-left: 1%;
+}
+
+.boxesGrid{
+    display: grid;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+}
+
+.boxes{
+    margin: 1%;
+    border-radius: 3px;
+    background-color:rgb(49, 167, 250);
+}
+.RightCollom{
+    margin-right:0 ;
+}
+.boxes h1{
+    margin: 3% 0 0 2% ;
+    font-size: 1.4em;
+    text-align: center;
+}
+.SmallDescription{
+    color: black;
+    margin: 2% 2% 0 2% ;
+    font-size: .96em;
+}
+.ViewMore{
+    margin: 2%;
+    font-size: .8em;
+}
+#File{
+    margin-left: 2%;
+}
+#Porject1{
+    transition: transform .2s;
+}
+
+#Porject1:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px black ;
+}
+
+#Porject2{
+    transition: transform .2s;
+}
+#Porject2:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px black ;
+}
+
+#Porject3{
+    transition: transform .2s;
+}
+#Porject3:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px black ;
+}
+
+#Porject4{
+    transition: transform .2s;
+}
+#Porject4:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px black ;
+}
+
+#Porject5{
+    transition: transform .2s;
+}
+#Porject5:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px black ;
+}
+
+#Porject6{
+    transition: transform .2s;
+}
+#Porject6:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px black ;
+}
+
+#Porject7{
+    transition: transform .2s;
+}
+#Porject7:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px black ;
+}
+
+#Project8{
+    transition: transform .2s;
+}
+/* #Porject8:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px black ;
+} */
+
+#menuGrid{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+#menuGrid h1{
+    margin: 5%;
+}
+#Studies{
+    text-align: center;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+      ), rgb(142, 179, 223);
+    transition: transform .2s;
+    border-radius: 3px;
+    margin-left: 0;
+}
+#Studies:hover{
+    transform: scale(1.05);
+    background: linear-gradient(
+          rgba(0, 0, 0, 0), 
+          rgba(0, 0, 0, 0)
+        ), rgb(142, 179, 223);
+    box-shadow: 0 0 20px black ;
+}
+#Skills{
+    text-align: center;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+      ), rgb(5, 27, 44);
+    transition: transform .2s;
+}
+#Skills:hover{
+    transform: scale(1.05);
+    background: linear-gradient(
+          rgba(0, 0, 0, 0), 
+          rgba(0, 0, 0, 0)
+        ), rgb(5, 27, 44);;
+    box-shadow: 0 0 20px black ;
+}
+#Hobbies{
+    text-align: center;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+      ), rgb(102, 70, 57);
+    transition: transform .2s;
+}
+#Hobbies:hover{
+    transform: scale(1.05);
+    background: linear-gradient(
+          rgba(0, 0, 0, 0), 
+          rgba(0, 0, 0, 0)
+        ), rgb(102, 70, 57);;
+    box-shadow: 0 0 20px black ;
+}
+#About{
+    text-align: center;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+      ), rgb(188, 120, 112);
+    transition: transform .2s;
+}
+#About:hover{
+    transform: scale(1.05);
+    background: linear-gradient(
+          rgba(0, 0, 0, 0), 
+          rgba(0, 0, 0, 0)
+        ), rgb(188, 120, 112);
+    box-shadow: 0 0 20px black ;
+}
+#back{
+    background-color: black;
+    transition: transform .2s;
+    border-radius: 3px;
+}
+#back:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px black ;
+}
+#BigPanneltext{
+    height:fit-content ;
+}
+#BigPanneltitle{
+    padding: 1% 0 0 0 ;
+    margin: 0 0 1% 1%;
+}
+#BigPannelDescription{
+    color: black;
+    margin: 0 1% 1% 1%;
+    font-size: 1.2em;
+}
