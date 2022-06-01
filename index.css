@@ -50,7 +50,7 @@ h1,p,a{
     background: linear-gradient(
         rgba(0, 0, 0, 0.7), 
         rgba(0, 0, 0, 0.7)
-      ), url(images/Projects.jpg);
+      ), url(Images/Projects.jpg);
     background-size: contain;
     transition: transform .2s;
 }
@@ -59,7 +59,7 @@ h1,p,a{
     background: linear-gradient(
           rgba(0, 0, 0, 0), 
           rgba(0, 0, 0, 0)
-        ), url(images/Projects.jpg);
+        ), url(Images/Projects.jpg);
     box-shadow: 0 0 20px black ;
 }
 
@@ -77,7 +77,7 @@ h1,p,a{
     background: linear-gradient(
           rgba(0, 0, 0, 0), 
           rgba(0, 0, 0, 0)
-        ), url(images/Studies.jpg);
+        ), url(Images/Studies.jpg);
     box-shadow: 0 0 20px black ;
 }
 #Skills{
@@ -85,7 +85,7 @@ h1,p,a{
     background: linear-gradient(
         rgba(0, 0, 0, 0.7), 
         rgba(0, 0, 0, 0.7)
-      ), url(images/skills.jpg);
+      ), url(Images/skills.jpg);
     background-size: contain;
     transition: transform .2s;
 }
@@ -94,7 +94,7 @@ h1,p,a{
     background: linear-gradient(
           rgba(0, 0, 0, 0), 
           rgba(0, 0, 0, 0)
-        ), url(images/skills.jpg);
+        ), url(Images/skills.jpg);
     box-shadow: 0 0 20px black ;
 }
 #Hobbies{
@@ -102,7 +102,7 @@ h1,p,a{
     background: linear-gradient(
         rgba(0, 0, 0, 0.7), 
         rgba(0, 0, 0, 0.7)
-      ), url(images/Hobbies.jpg);
+      ), url(Images/Hobbies.jpg);
     background-size: contain;
     transition: transform .2s;
 }
@@ -111,7 +111,7 @@ h1,p,a{
     background: linear-gradient(
           rgba(0, 0, 0, 0), 
           rgba(0, 0, 0, 0)
-        ), url(images/Hobbies.jpg);
+        ), url(Images/Hobbies.jpg);
     box-shadow: 0 0 20px black ;
 }
 #About{
@@ -119,7 +119,7 @@ h1,p,a{
     background: linear-gradient(
         rgba(0, 0, 0, 0.7), 
         rgba(0, 0, 0, 0.7)
-      ), url(images/IMG_2488.JPG);
+      ), url(Images/IMG_2488.JPG);
     background-size: contain;
     border-radius: 3px 10px 3px 3px;
     transition: transform .2s;
@@ -129,7 +129,7 @@ h1,p,a{
     background: linear-gradient(
           rgba(0, 0, 0, 0), 
           rgba(0, 0, 0, 0)
-        ), url(images/IMG_2488.jpg);
+        ), url(Images/IMG_2488.jpg);
     box-shadow: 0 0 20px black ;
 }
 #Contact{
