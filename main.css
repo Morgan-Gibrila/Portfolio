@@ -1,0 +1,79 @@
+/* --- Fonts --- */
+@font-face {
+    font-family: Kanit-Regular;
+    src: url(Fonts/Kanit-woff/Kanit-Regular.woff) format('woff');
+}
+@font-face {
+    font-family: Kanit-Bold;
+    src: url(Fonts/Kanit-woff/Kanit-Bold.woff) format('woff');
+}
+@font-face {
+    font-family: Kanit-SemiBold;
+    src: url(Fonts/Kanit-woff/Kanit-SemiBold.woff) format('woff');
+}
+@font-face {
+    font-family: Kanit-Medium;
+    src: url(Fonts/Kanit-woff/Kanit-Medium.woff) format('woff');
+}
+@font-face {
+    font-family: Kanit-Thin;
+    src: url(Fonts/Kanit-woff/Kanit-Thin.woff) format('woff');
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(30, 30, 30);
+}
+li, a{
+    font-family:Kanit-SemiBold;
+    color: #FAFAF0;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* --- Header --- */
+header{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#logo{
+    margin-right: auto;
+    padding-left: 5%;
+}
+
+#logo:hover{
+    color: #309B1D;
+}
+
+nav{
+    padding-right: 5%;
+    padding-top: 15px;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.dividers{
+    padding: 0;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: #309B1D;
+}
+
+/* --- Intro div --- */
+#Maindivs{
+    
+    background-color: #309B1D;
+}
