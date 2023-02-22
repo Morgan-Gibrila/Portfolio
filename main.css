@@ -1,24 +1,5 @@
 /* --- Fonts --- */
-@font-face {
-    font-family: Kanit-Regular;
-    src: url(Fonts/Kanit-woff/Kanit-Regular.woff) format('woff');
-}
-@font-face {
-    font-family: Kanit-Bold;
-    src: url(Fonts/Kanit-woff/Kanit-Bold.woff) format('woff');
-}
-@font-face {
-    font-family: Kanit-SemiBold;
-    src: url(Fonts/Kanit-woff/Kanit-SemiBold.woff) format('woff');
-}
-@font-face {
-    font-family: Kanit-Medium;
-    src: url(Fonts/Kanit-woff/Kanit-Medium.woff) format('woff');
-}
-@font-face {
-    font-family: Kanit-Thin;
-    src: url(Fonts/Kanit-woff/Kanit-Thin.woff) format('woff');
-}
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;600;700&display=swap');
 
 *{
     box-sizing: border-box;
@@ -29,10 +10,8 @@ body{
     background-color: rgb(30, 30, 30);
 }
 li, a{
-    font-family:Kanit-SemiBold;
     color: #FAFAF0;
     text-decoration: none;
-    font-size: 20px;
 }
 
 /* --- Header --- */
@@ -42,8 +21,9 @@ header{
 }
 
 #logo{
+    font-family: 'kanit', sans-serif;
     margin-right: auto;
-    padding-left: 5%;
+    margin-left: 2%;
 }
 
 #logo:hover{
@@ -51,8 +31,8 @@ header{
 }
 
 nav{
-    padding-right: 5%;
-    padding-top: 15px;
+    padding-right: 1%;
+    padding-top: 4px;
 }
 
 .nav_links li {
@@ -62,18 +42,46 @@ nav{
 
 .dividers{
     padding: 0;
+    font-size: 1.7em;
 }
 
 .nav_links li a{
     transition: all 0.3s ease 0s;
 }
 
-.nav_links li a:hover{
-    color: #309B1D;
+.NavLinkText{
+    font-family: 'kanit', sans-serif;
+    font-weight: bold;
+    font-size: 1.7em;
 }
 
 /* --- Intro div --- */
-#Maindivs{
-    
-    background-color: #309B1D;
+#Intoduction{
+    /* background-color: #309B1D; */
+    width: fit-content;
+    margin: 20vh auto 10vh auto;
+}
+
+#Intoduction,p{
+    color: #FAFAF0;
+    font-family: 'Kanit', sans-serif;
+    font-weight: regular;
+    font-size: 1.7em;
+}
+
+/* --- Divider Line --- */
+#DividerLine{
+    width: 50vh;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* --- My work --- */
+
+#WorkTitle{
+    color: #FAFAF0;
+    font-family: 'Kanit', sans-serif;
+    font-size: 2em;
+    width: fit-content;
+    margin: 0 auto;
 }
