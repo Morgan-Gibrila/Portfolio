@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;600;700&display=swap');
+
+/* --- Intro div --- */
+#home-intoduction{
+    /* background-color: #309B1D; */
+    width: fit-content;
+    margin: 20vh auto 10vh auto;
+}
+
+#home-intoduction,p{
+    /* color: #FAFAF0; */
+    color: black;
+    font-family: 'Kanit', sans-serif;
+    font-weight: regular;
+    font-size: 1.7em;
+}
+
+/* --- Divider Line --- */
+#DividerLine{
+    border-color: black;
+    width: 50vh;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* --- My work --- */
+
+#WorkTitle{
+    font-family: 'Kanit', sans-serif;
+    font-size: 2em;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#marquee-contianer{
+    --gap:1rem;
+    /* position: absolute; */
+    /* bottom: 0px; */
+    width: 39vw;
+    display: flex;
+    overflow: hidden;
+    gap: var(--gap);
+
+    background: rgba(217, 217, 217, 0.2);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+}
+#marquee-content{
+    margin: 0;
+    padding: 0 ;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+    gap: var(--gap);
+    animation: scroll-left 20s linear infinite;
+}
+.marquee-buttons{
+    font-family: 'kanit', sans-serif;
+    font-weight: 900;
+    font-size: 1.7em;
+}
+
+.home-introduction-hobbies-grid{
+    display: grid;
+    grid-template-columns: 30px 1fr min-content;
+}
+/* --- Animeation --- */
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX( calc(-100% - var(--gap)));
+    }   
+}

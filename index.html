@@ -2,34 +2,53 @@
 <html>
     <head>
         <title>Morgan Gibrila</Title>
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
         <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="home.css">
+        <script src="bubbleBackground.js"></script>
     </head>
     <body>
+        <div id="bubble_Background_container"></div>
         <header>
                 <a href="#" title="Home" id="logo"> <h1>MG</h1> </a>
                 <nav>
-                    <ul class="nav_links">
-                        <li><a href=""><p class="NavLinkText">Work</p></a></li>
-                        <li class="dividers">|</li>
-                        <li><a href=""><p class="NavLinkText">Photography</p></a></li>
-                        <li class="dividers">|</li>
-                        <li><a href=""><p class="NavLinkText">About Me</p></a></li>
+                    <ul class="nav-links">
+                        <li><a href=""><p class="nav-link-text">Work</p></a></li>
+                        <li class="nav-link-dividers">|</li>
+                        <li><a href=""><p class="nav-link-text">Photography</p></a></li>
+                        <li class="nav-link-dividers">|</li>
+                        <li><a href="About.html"><p class="nav-link-text">About Me</p></a></li>
                     </ul>
                 </nav>
         </header>
-        <div id="Intoduction">
+        <div id="home-intoduction">
             <p>Hi, I'm <b>Morgan Gibrila</b></p>
-            <p>I am a <b>UX / UI Design</b> Student</p>
-            <p>Who loves Photography, Bouldering and learning</p>
+            <p>I am a <b>UI / UX Design</b> Student</p>
+            <div class="home-introduction-hobbies-grid">
+                <p>I:</p>
+                <div id="marquee-contianer">
+                    <ul id="marquee-content">
+                        <a class="marquee-buttons" href="project collection.html"> Photograph ✧</a>
+                        <a class="marquee-buttons" href="project collection.html">Boulder ✧</a>
+                        <a class="marquee-buttons" href="project collection.html">Skateboard ✧</a>
+                    </ul>
+                    <ul id="marquee-content" aria-hidden="true">
+                        <a class="marquee-buttons" href="project collection.html"> Photograph ✧</a>
+                        <a class="marquee-buttons" href="project collection.html">Boulder ✧</a>
+                        <a class="marquee-buttons" href="project collection.html">Skateboards ✧</a>
+                    </ul>
+                </div>
+            </div>
         </div>
         <hr id="DividerLine">
         <div id="WorkTitle">
             <h1>Work</h1>
         </div>
-        <div id="Carousel">
-
+        <div id="Carousel-scroll-zone">
+            <div></div>
+            <div></div>
         </div>
-        <footer>
+        <footer id="FooterGrid">
 
         </footer>
     </body>
