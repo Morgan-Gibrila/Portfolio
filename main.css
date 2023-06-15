@@ -52,6 +52,10 @@ nav{
     transition: all 0.3s ease 0s;
 }
 
+.nav-links  p:hover{
+    color: #309B1D;
+}
+
 .nav-link-text{
     font-family: 'kanit', sans-serif;
     font-weight: bold;
@@ -61,5 +65,5 @@ nav{
 #bubble_Background_container{
     position: fixed;
     z-index: -10;
-    filter: blur(15px);
+    filter: blur(100px);
 }
