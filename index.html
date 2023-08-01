@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Morgan Gibrila</Title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
         <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="home.css">
@@ -10,92 +11,97 @@
     <body>
         <div id="bubble_Background_container"></div>
         <header>
-                <a href="#" title="Home" id="logo"> <h1>MG</h1> </a>
-                <nav>
-                    <ul class="nav-links">
-                        <li><a href=""><p class="nav-link-text">Work</p></a></li>
+            <a href="#" title="Home" id="logo"> <h1>MG</h1> </a>
+            <nav class="navbar">
+                    <ul class="nav-menu">
+                        <li class="nav-items">
+                            <a href="myWork.html" class="nav-link">Work</a>
+                        </li>
                         <li class="nav-link-dividers">|</li>
-                        <li><a href=""><p class="nav-link-text">Photography</p></a></li>
+                        <li class="nav-items">
+                            <a href="Photography.html" class="nav-link">Photography</a>
+                        </li>
                         <li class="nav-link-dividers">|</li>
-                        <li><a href="About.html"><p class="nav-link-text">About Me</p></a></li>
+                        <li class="nav-items" >
+                            <a href="About.html" class="nav-link" >About Me</a>
+                        </li>
                     </ul>
-                </nav>
+            </nav>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </header>
         <div id="home-intoduction">
             <p>Hi, I'm <b>Morgan Gibrila</b></p>
-            <p>I am a <b>UI / UX Design</b> Student</p>
+            <p>I am a <b>UI / UX Designer</b> </p>
             <div class="home-introduction-hobbies-grid">
                 <p>I:</p>
                 <div id="marquee-contianer">
                     <ul id="marquee-content">
-                        <a class="marquee-buttons" href="project collection.html"> Photograph ✧</a>
-                        <a class="marquee-buttons" href="project collection.html"> Boulder ✧</a>
-                        <a class="marquee-buttons" href="project collection.html"> Skateboard ✧</a>
+                        <a class="marquee-buttons" href="project collection.html"> Photograph ✧ </a>
+                        <a class="marquee-buttons" href="project collection.html">Boulder ✧ </a>
+                        <a class="marquee-buttons" href="project collection.html">Skateboard ✧ </a>
                     </ul>
                     <ul id="marquee-content" aria-hidden="true">
-                        <a class="marquee-buttons" href="project collection.html"> Photograph ✧</a>
-                        <a class="marquee-buttons" href="project collection.html"> Boulder ✧</a>
-                        <a class="marquee-buttons" href="project collection.html"> Skateboards ✧</a>
+                        <a class="marquee-buttons" href="project collection.html"> Photograph ✧ </a>
+                        <a class="marquee-buttons" href="project collection.html">Boulder ✧ </a>
+                        <a class="marquee-buttons" href="project collection.html">Skateboards ✧ </a>
                     </ul>
                 </div>
             </div>
         </div>
         <hr id="DividerLine">
         <div id="WorkTitle">
-            <h1>Work</h1>
+            <h1>My Work</h1>
         </div>
 
         <div id="project-grid">
 
             <div class="project-card-container">
-                <div class="perspective-grid perspective-square-1"><a href=""><button class='perspective-grid-button'></button></a></div>
-                <div class="perspective-grid perspective-square-2"><a href=""><button class='perspective-grid-button'></button></a></div>
-                <div class="perspective-grid perspective-square-3"><a href=""><button class='perspective-grid-button'></button></a></div>
-                <div class="perspective-grid perspective-square-4"><a href=""><button class='perspective-grid-button'></button></a></div>
-                <div class="perspective-grid perspective-square-5"><a href=""><button class='perspective-grid-button'></button></a></div>
-                <div class="perspective-grid perspective-square-6"><a href=""><button class='perspective-grid-button'></button></a></div>
-                <div class="perspective-grid perspective-square-7"><a href=""><button class='perspective-grid-button'></button></a></div>
-                <div class="perspective-grid perspective-square-8"><a href=""><button class='perspective-grid-button'></button></a></div>
-                <div class="perspective-grid perspective-square-9"><a href=""><button class='perspective-grid-button'></button></a></div>
                 <div class="project-card" id="project-card-1">
-                    <!-- <h1>Project Title</h1> -->
                 </div>
+                <h1 class="project-card-title">Project Title</h1>
             </div>
 
             <div class="project-card-container">
-                <div class="perspective-grid perspective-square-1"><a href=""><button class='perspective-grid-button'></button></a></div>
-                <div class="perspective-grid perspective-square-2"><a href=""><button class='perspective-grid-button'></button></a></div>
-                <div class="perspective-grid perspective-square-3"><a href=""><button class='perspective-grid-button'></button></a></div>
-                <div class="perspective-grid perspective-square-4"><a href=""><button class='perspective-grid-button'></button></a></div>
-                <div class="perspective-grid perspective-square-5"><a href=""><button class='perspective-grid-button'></button></a></div>
-                <div class="perspective-grid perspective-square-6"><a href=""><button class='perspective-grid-button'></button></a></div>
-                <div class="perspective-grid perspective-square-7"><a href=""><button class='perspective-grid-button'></button></a></div>
-                <div class="perspective-grid perspective-square-8"><a href=""><button class='perspective-grid-button'></button></a></div>
-                <div class="perspective-grid perspective-square-9"><a href=""><button class='perspective-grid-button'></button></a></div>
                 <div class="project-card" id="project-card-2">
-                    <!-- <h1>Project Title</h1> -->
                 </div>
+                <h1 class="project-card-title">Project Title</h1>
             </div>
 
             <div class="project-card-container">
-                <div class="perspective-grid perspective-square-1"><a href=""><button class='perspective-grid-button'></button></a></div>
-                <div class="perspective-grid perspective-square-2"><a href=""><button class='perspective-grid-button'></button></a></div>
-                <div class="perspective-grid perspective-square-3"><a href=""><button class='perspective-grid-button'></button></a></div>
-                <div class="perspective-grid perspective-square-4"><a href=""><button class='perspective-grid-button'></button></a></div>
-                <div class="perspective-grid perspective-square-5"><a href=""><button class='perspective-grid-button'></button></a></div>
-                <div class="perspective-grid perspective-square-6"><a href=""><button class='perspective-grid-button'></button></a></div>
-                <div class="perspective-grid perspective-square-7"><a href=""><button class='perspective-grid-button'></button></a></div>
-                <div class="perspective-grid perspective-square-8"><a href=""><button class='perspective-grid-button'></button></a></div>
-                <div class="perspective-grid perspective-square-9"><a href=""><button class='perspective-grid-button'></button></a></div>
                 <div class="project-card" id="project-card-3">
-                    <!-- <h1>Project Title</h1> -->
                 </div>
+                <h1 class="project-card-title">Project Title</h1>
             </div>
 
 
         </div>
     
-        <footer id="FooterGrid">
+        <footer id="footer-grid">
+
+            <div class="social-media-icon-container">
+                <div class="social-media-icon" id="social-media-icon-1">
+                    
+                </div>
+                <h2> Instagram</h2>
+            </div>
+            
+            <div class="social-media-icon-container">
+                <div class="social-media-icon" id="social-media-icon-2">
+                    
+                </div>
+                <h2> Linked-in</h2>
+            </div>
+            
+            <div class="social-media-icon-container">
+                <div class="social-media-icon" id="social-media-icon-3">
+                    
+                </div>
+                <h2> Email</h2>
+            </div>
 
         </footer>
     </body>

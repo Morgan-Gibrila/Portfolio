@@ -31,11 +31,11 @@ function setup(){
     colorPalette[1][4] = color('#1FF28B'); 
 
     // - Third pallet - 
-    colorPalette[2][0] = color(''); 
-    colorPalette[2][1] = color(''); 
-    colorPalette[2][2] = color(''); 
-    colorPalette[2][3] = color(''); 
-    colorPalette[2][4] = color('');
+    colorPalette[2][0] = color('#1be7ff'); 
+    colorPalette[2][1] = color('#6eeb83'); 
+    colorPalette[2][2] = color('#E2B1B1'); 
+    colorPalette[2][3] = color('#e8aa14'); 
+    colorPalette[2][4] = color('#B8336A');
 
     // - Forth pallet - 
     colorPalette[3][0] = color(''); 
@@ -52,8 +52,8 @@ function setup(){
     colorPalette[4][4] = color('');
 
     // - Selecting a random palette - 
-    let selectedPalette = Math.round(random(1));
-    console.log(selectedPalette);
+    let selectedPalette = Math.round(random(2));
+    console.log("color palette: " + selectedPalette);
 
     // --- Instanciating bubbles & Setting each to one to a color from a pallet --- 
     for ( let i = 0; i < maxBubbles; i++){
@@ -78,8 +78,9 @@ function draw(){
     }
 
     // --- Creating a mouse cursor --- 
-    fill(48,155,29);
-    ellipse(mousePosition.x, mousePosition.y, 50);
+    // fill(48,155,29);
+    // fill(0,0,0);
+    // ellipse(mousePosition.x, mousePosition.y, 200);
 }
 
 // --- Updating mouse possition vector function --- 
@@ -98,14 +99,11 @@ class Bubble{
     constructor(){
         this.position = createVector(Math.random() * windowWidth, Math.random() * windowHeight);
         this.velocity = p5.Vector.random2D();
-        this.velocity.mult(3);
-        this.bubbleRadius = 600;
-        this.red = Math.random() * 256;
-        this.green = Math.random() * 256;
-        this.blue = Math.random() * 256;
+        this.velocity.mult(1.5);
+        this.bubbleRadius = 500;
         this.color;
     }
-
+     
     // - Checking if the bubbles should bouce off the canvcas walls -
     moveBubble(){
         
@@ -143,19 +141,4 @@ class Bubble{
 
 /* --- Nuke Zone ---
 
-// for ( let i = 0; i < bubbles.length; i++){
-    //     for ( let x = 0; x < bubbles.length; x++){
-    //     checkCollision(bubbles[i], bubbles[x]);
-    //     }
-    // }
-
-    // --- Checking for collison between bubbles --- 
-function checkCollision(object, other){
-    let distance = object.position.dist(other.position);
-    if (distance < object.bubbleRadius && distance != 0){
-        object.increasX = !object.increasX;
-        object.increasY = !object.increasY;
-        return;
-    }
-}
 */

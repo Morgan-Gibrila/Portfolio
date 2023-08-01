@@ -1,3 +1,12 @@
+:root{
+    --ff-heading: 'kanit', sans-serif;
+    --fs-nav: 1.65rem;
+}
+@media only screen and (max-width:600px){
+    :root{
+        --fs-nav: 1.5rem;
+    }
+}
 /* --- Fonts --- */
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;600;700&display=swap');
 
@@ -8,15 +17,41 @@
     margin: 0;
     padding: 0;
 }
-body{
-    /* background-color: rgb(30, 30, 30); */
-}
+
 li, a{
     /* color: #FAFAF0;*/
     color: black;
     text-decoration: none;
 }
+/* --- Project cards --- */
+#project-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    width: 90%;
+    margin: 5%;
+    /* margin-bottom: 4%; */
+}
+.project-card{
+    border-radius: 10px;
+    aspect-ratio: 16 /9 ;
+    width: max;
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    background-color: coral;
+    transition: transform 100ms ease;
+}
 
+.project-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px;
+}
+
+.project-card-title{
+    margin: 5px 0 0 5px;
+    font-family: var(--ff-heading);
+}
 /* --- Header --- */
 header{
     display: flex;
@@ -24,7 +59,7 @@ header{
 }
 
 #logo{
-    font-family: 'kanit', sans-serif;
+    font-family: var(--ff-heading);
     margin-right: auto;
     margin-left: 2%;
 }
@@ -33,35 +68,89 @@ header{
     color: #309B1D;
 }
 
-nav{
-    padding-right: 2%;
+.navbar{
+    margin-right: 1.5%;
+}
+
+.nav-menu{
     padding-top: 4px;
 }
 
-.nav-links li {
+.nav-menu li {
     display: inline-block;
     padding: 0px 10px;
 }
 
+
 .nav-link-dividers{
     padding: 0;
-    font-size: 1.7em;
+    font-size: var(--fs-nav);
 }
 
-.nav-links li a{
+/* .nav-menu li a{
     transition: all 0.3s ease 0s;
-}
+} */
 
-.nav-links  p:hover{
+.nav-menu  a:hover{
     color: #309B1D;
 }
 
-.nav-link-text{
-    font-family: 'kanit', sans-serif;
+.nav-items{
+    font-family: var(--ff-heading);
     font-weight: bold;
-    font-size: 1.6em;
+    font-size: var(--fs-nav);
 }
 
+/* @media only screen and (max-width: 600px){
+    header{
+        overflow: hidden;
+        background-color: black;
+        position: relative;
+    }
+    .nav-menu{
+        display: none; 
+    }
+    .nav-menu li {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    header a.icon{
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+} */
+
+/* --- Footer --- */
+#footer-grid{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    margin: 5% 30%;
+    margin-top: 7%;
+}
+
+.social-media-icon{
+    aspect-ratio: 1/1;
+    height: 100px;
+    border: 1px solid black;
+}
+#social-media-icon-1{
+    background-color: pink;
+}
+#social-media-icon-2{
+    background-color: lightblue;
+}
+#social-media-icon-3{
+    background-color: lightgreen;
+}
+
+/* --- Bubble background --- */
 #bubble_Background_container{
     position: fixed;
     z-index: -10;

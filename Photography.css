@@ -1,0 +1,41 @@
+#photo-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px;
+    width: 90%;
+    margin: 5%;
+}
+.photo-card{
+    border-radius: 10px;
+    aspect-ratio: 1/1 ;
+    width: max;
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    background-color: coral;
+    transition: transform 100ms ease;
+}
+
+.photo-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px;
+}
+
+#photo-card-1{
+    background-color: red;
+}
+#photo-card-2{
+    background-color: green;
+}
+#photo-card-3{
+    background-color: blue;
+}
+#photo-card-4{
+    background-color: yellow;
+}
+#photo-card-5{
+    background-color: purple;
+}
+#photo-card-6{
+    background-color: pink;
+}

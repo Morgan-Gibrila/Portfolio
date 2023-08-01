@@ -1,1 +1,30 @@
+:root{
+    --ff-heading: 'kanit', sans-serif;
+    --fs-nav: 1.65rem;
+}
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;600;700&display=swap');
+
+.about-content-grid{
+    display: grid;
+    grid-template-columns: 450px auto;
+    width: 90%;
+    margin: 5% 5% 0 5%;
+} 
+#profile-pic{
+    aspect-ratio: 1/1;
+    width: 450px;
+    border-radius: 10px;
+}
+
+#about-description{
+    margin-left: 50px ;
+}
+#about-description p{
+    font-family: var(--ff-heading);
+    font-size: 1.2rem;
+    margin-top: 10px;
+
+}
+#footer-grid{
+    margin: 3% 20%;
+}
