@@ -4,7 +4,9 @@
 /* --- Variables --- */
 :root{
     --ff-heading: 'kanit', sans-serif;
-    --fs-nav: 1.65rem;
+    --fs-nav: 1.8rem;
+    --fs-footer:1.5rem;
+    --fs-project-card-title: 2rem;
 }
 @media only screen and (max-width:600px){
     :root{
@@ -53,6 +55,7 @@ li, a{
 .project-card-title{
     margin: 5px 0 0 5px;
     font-family: var(--ff-heading);
+    font-size: var(--fs-project-card-title);
 }
 /* --- Header --- */
 header{
@@ -129,6 +132,10 @@ header{
 } */
 
 /* --- Footer --- */
+footer h2{
+    font-family: var(--ff-heading);
+    font-size: var(--fs-footer);
+}
 #footer-grid{
     display: grid;
     place-items: center;

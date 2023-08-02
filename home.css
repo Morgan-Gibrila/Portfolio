@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;600;700&display=swap');
 :root{
     --ff-heading: 'kanit', sans-serif;
     --fs-heading: 2.5rem;
@@ -10,7 +11,6 @@
         --fs-work-title: 1.5rem;
     }
 }
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;600;700&display=swap');
 
 /* --- Intro div --- */
 #home-intoduction{
