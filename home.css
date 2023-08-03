@@ -2,7 +2,7 @@
 :root{
     --ff-heading: 'kanit', sans-serif;
     --fs-heading: 2.5rem;
-    --fs-work-title: 2.7rem;
+    --fs-work-title: 2.6rem;
 }
 
 @media only screen and (max-width: 600px) {
