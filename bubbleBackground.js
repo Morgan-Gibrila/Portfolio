@@ -62,6 +62,9 @@ function setup(){
         bubbles[i].setColor(colorPalette[selectedPalette][i]);
     }
 
+    // - Set the radius of the bubbles based on screen size - 
+    setBubbleSize();
+    
     noStroke();
     mousePosition = createVector(mouseX,mouseY);
 }
@@ -92,6 +95,19 @@ function updateMousePos(x, y){
 // --- Updating canvas size on window resize ---
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
+    setBubbleSize();
+}
+
+function setBubbleSize(){
+    if( windowWidth < 600 ){
+        for ( let i = 0; i < bubbles.length; i++){
+            bubbles[i].bubbleRadius = 250;
+        }
+    } else{
+        for ( let i = 0; i < bubbles.length; i++){
+            bubbles[i].bubbleRadius = 500;
+        }
+    }
 }
 
 // --- The object class ---
