@@ -2,22 +2,42 @@
 
 :root{
     --ff-heading: 'kanit', sans-serif;
+    --pf-sz: 30vw;
+}
+@media only screen and (max-width:600px){
+    :root{
+        --pf-sz:90vw;
+    }
 }
 
 .about-content-grid{
     display: grid;
-    grid-template-columns: 450px auto;
+    grid-template-columns: var(--pf-sz) 60vw ;
     width: 90%;
     margin: 5% 5% 0 5%;
 } 
+@media only screen and (max-width:600px){
+    .about-content-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) ;
+        width: 90%;
+        margin: 5% 5% 0 5%;
+    } 
+}
 #profile-pic{
     aspect-ratio: 1/1;
-    width: 450px;
+    width: var(--pf-sz);
     border-radius: 10px;
 }
 
 #about-description{
     margin-left: 50px ;
+    width: 100%;
+}
+@media only screen and (max-width:600px){
+    #about-description{
+        margin-left: 0 ;
+    }
 }
 #about-description p{
     font-family: var(--ff-heading);
