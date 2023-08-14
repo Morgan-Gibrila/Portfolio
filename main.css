@@ -57,6 +57,13 @@ li, a{
     margin: 5px 0 0 5px;
     font-family: var(--ff-heading);
     font-size: var(--fs-project-card-title);
+    
+}
+.grid-button{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
 }
 /* --- Header --- */
 header{
@@ -107,30 +114,35 @@ header{
     font-size: var(--fs-nav);
 }
 
-/* @media only screen and (max-width: 600px){
+#nav-active{
+    color: #309B1D;
+}
+
+@media only screen and (max-width: 600px){
     header{
-        overflow: hidden;
-        background-color: black;
-        position: relative;
+        /* overflow: hidden; */
+        /* position: relative; */
+        /* display: block; */
     }
-    .nav-menu{
-        display: none; 
+    .nav-link-dividers{
+        visibility: hidden;
+        height: 10px;
     }
     .nav-menu li {
+        text-align: right;
         color: white;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
+        /* padding: 14px 16px; */
+        font-size: var(--fs-nav);
         display: block;
     }
     header a.icon{
         background: black;
         display: block;
-        position: absolute;
+        /* position: absolute; */
         right: 0;
         top: 0;
     }
-} */
+}
 
 /* --- Footer --- */
 footer h2{
@@ -156,13 +168,22 @@ footer h2{
     border: 1px solid black;
 }
 #social-media-icon-1{
-    background-color: pink;
+    background-image: url(Icons/ri_instagram-fill.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
 }
 #social-media-icon-2{
-    background-color: lightblue;
+    background-image: url(Icons/bi_linkedin.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
 }
 #social-media-icon-3{
-    background-color: lightgreen;
+    background-image: url(Icons/heroicons-solid_mail.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
 }
 
 /* --- Bubble background --- */

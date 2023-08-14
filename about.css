@@ -18,10 +18,7 @@
 } 
 @media only screen and (max-width:600px){
     .about-content-grid{
-        display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) ;
-        width: 90%;
-        margin: 5% 5% 0 5%;
     } 
 }
 #profile-pic{
