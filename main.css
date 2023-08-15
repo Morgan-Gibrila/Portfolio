@@ -12,6 +12,7 @@
     :root{
         --fs-nav: 1.5rem;
         --fs-footer:1.1rem;
+        --fs-project-card-title: 1.8rem;
     }
 }
 
@@ -184,6 +185,11 @@ footer h2{
     background-size: cover;
     background-repeat: no-repeat;
     border: none;
+}
+@media only screen and (max-width:600px){
+    .social-media-icon{
+        height: 60px;
+    }
 }
 
 /* --- Bubble background --- */

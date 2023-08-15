@@ -2,11 +2,13 @@
 
 :root{
     --ff-heading: 'kanit', sans-serif;
+    --fs-paragraph: 1.45rem;
     --pf-sz: 30vw;
 }
 @media only screen and (max-width:600px){
     :root{
         --pf-sz:90vw;
+        --fs-paragraph: 1.2rem;
     }
 }
 
@@ -38,7 +40,7 @@
 }
 #about-description p{
     font-family: var(--ff-heading);
-    font-size: 1.2rem;
+    font-size: var(--fs-paragraph);
     margin-top: 10px;
 
 }
