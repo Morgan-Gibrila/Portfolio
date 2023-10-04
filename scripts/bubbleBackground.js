@@ -1,7 +1,8 @@
 let bubbles = []; // Array for bubble object
 let colorPalette = []; // Array of color sets 
 let maxBubbles = 5; // Maximum amount of bubbles
-let mousePosition; // mouse possition 
+let mousePosition; // mouse possition
+let accentColor = document.documentElement;
 
 
 function setup(){
@@ -17,30 +18,30 @@ function setup(){
     // --- Setting color pallets ---
 
     // - First pallet - 
-    colorPalette[0][0] = color('#ff0000');
-    colorPalette[0][1] = color('#0000ff'); 
-    colorPalette[0][2] = color('#3cb371'); 
-    colorPalette[0][3] = color('#ee82ee'); 
-    colorPalette[0][4] = color('#ffa500'); 
+    colorPalette[0][0] = color('#ee82ee'); 
+    colorPalette[0][1] = color('#3cb371'); 
+    colorPalette[0][2] = color('#ffa500'); 
+    colorPalette[0][3] = color('#0000ff'); 
+    colorPalette[0][4] = color('#ff0000');
 
     // - Second pallet - 
-    colorPalette[1][0] = color('#1F74F2'); 
-    colorPalette[1][1] = color('#21B3FC'); 
+    colorPalette[1][0] = color('#21B3FC'); 
+    colorPalette[1][1] = color('#1F74F2'); 
     colorPalette[1][2] = color('#29D8E6'); 
     colorPalette[1][3] = color('#21FCD0'); 
     colorPalette[1][4] = color('#1FF28B'); 
 
     // - Third pallet - 
     colorPalette[2][0] = color('#1be7ff'); 
-    colorPalette[2][1] = color('#6eeb83'); 
-    colorPalette[2][2] = color('#E2B1B1'); 
+    colorPalette[2][1] = color('#E2B1B1'); 
+    colorPalette[2][2] = color('#6eeb83'); 
     colorPalette[2][3] = color('#e8aa14'); 
     colorPalette[2][4] = color('#B8336A');
 
     // - Forth pallet - 
     colorPalette[3][0] = color('#ffffff'); 
-    colorPalette[3][1] = color('#2a52be'); 
-    colorPalette[3][2] = color('#ff5349'); 
+    colorPalette[3][1] = color('#ff5349'); 
+    colorPalette[3][2] = color('#2a52be'); 
     colorPalette[3][3] = color('#6082b6'); 
     colorPalette[3][4] = color('#E1B7BF'); 
 
@@ -52,8 +53,11 @@ function setup(){
     colorPalette[4][4] = color('');
 
     // - Selecting a random palette - 
-    let selectedPalette = Math.round(random(2));
+    let selectedPalette = Math.round(random(3));
     console.log("color palette: " + selectedPalette);
+
+    // - Set first color of color pallet as accent/hover color - 
+    accentColor.style.setProperty('--cl-hover',colorPalette[selectedPalette][1]);
 
     // --- Instanciating bubbles & Setting each to one to a color from a pallet --- 
     for ( let i = 0; i < maxBubbles; i++){

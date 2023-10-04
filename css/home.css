@@ -95,29 +95,6 @@
     grid-template-columns: 30px 1fr min-content;
 }
 
-/* --- Project Cards --- */
-
-#project-card-1{
-    /* background-image: url(); */
-    background-size: cover;
-    background-repeat: none;
-    background-color: rgb(38, 38, 38);
-}
-
-#project-card-2{
-    /* background-image: url(); */
-    background-size: cover;
-    background-repeat: none;
-    background-color: rgb(38, 38, 38);
-}
-#project-card-3{
-    /* background-image: url(); */
-    background-size: cover;
-    background-repeat: none;
-    background-color: rgb(38, 38, 38);
-}
-
-
 /* --- Animeation --- */
 @keyframes scroll-left {
     from {

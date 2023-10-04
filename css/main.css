@@ -7,7 +7,7 @@
     --fs-nav: 1.9rem;
     --fs-footer:2.3rem;
     --fs-project-card-title: 2rem;
-    --cl-hover: #4bce9e;
+    --cl-hover: #ffffff;
 }
 @media only screen and (max-width:600px){
     :root{
@@ -144,6 +144,14 @@ header{
         right: 0;
         top: 0;
     }
+}
+
+/* --- Project Cards --- */
+
+.project-card{
+    background-size: cover;
+    background-repeat: none;
+    background-color: rgb(38, 38, 38);
 }
 
 /* --- Footer --- */
