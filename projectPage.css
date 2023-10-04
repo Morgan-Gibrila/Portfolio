@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;600;700&display=swap');
+
+:root{
+    --ff-heading: 'kanit', sans-serif;
+    --fs--heading: 2.4rem;
+    --fs-paragraph: 1.3rem;
+    --pf-sz: 30vw;
+}
+@media only screen and (max-width:600px){
+    :root{
+        --pf-sz:90vw;
+        --fs-paragraph: 1.2rem;
+    }
+}
+#project-title{
+    font-family: var(--ff-heading);
+    font-size: var(--fs--heading);
+    margin-top: 5vh ;
+    margin-left: 5vw;
+}
+.project-text-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px;
+    margin: 15px 2%;
+}
+.main_text_grid_text_no_vert{
+    text-align: justify;
+    overflow-wrap: break-word;
+    margin: 0 3%;
+}
+.main_text_grid_text_no_vert p{
+    font-family: var(--ff-heading);
+    font-size: var(--fs-paragraph);
+}
+
+#project-image-group{
+    display: flex;
+    overflow-x: scroll;
+    margin: 2%;
+}
+
+.project-image{
+    background-color: blueviolet;
+    border-radius: 10px;
+    height: 50vh;
+    aspect-ratio: 16/9;
+    margin: 10px;
+}
+
+@media only screen and (max-width:600px){
+    .project-image{
+        height: 20vh;
+    }
+}
+/* --- Nuke zone --- */

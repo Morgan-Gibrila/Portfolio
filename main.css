@@ -5,8 +5,9 @@
 :root{
     --ff-heading: 'kanit', sans-serif;
     --fs-nav: 1.9rem;
-    --fs-footer:1.5rem;
+    --fs-footer:2.3rem;
     --fs-project-card-title: 2rem;
+    --cl-hover: #4bce9e;
 }
 @media only screen and (max-width:600px){
     :root{
@@ -17,7 +18,6 @@
 }
 
 /* --- Icons --- */
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -29,6 +29,7 @@ li, a{
     color: black;
     text-decoration: none;
 }
+
 /* --- Project cards --- */
 #project-grid{
     display: grid;
@@ -79,7 +80,7 @@ header{
 }
 
 #logo:hover{
-    color: #309B1D;
+    color: var(--cl-hover);
 }
 
 .navbar{
@@ -106,7 +107,7 @@ header{
 } */
 
 .nav-menu  a:hover{
-    color: #309B1D;
+    color: var(--cl-hover);
 }
 
 .nav-items{
@@ -116,7 +117,7 @@ header{
 }
 
 #nav-active{
-    color: #309B1D;
+    color: var(--cl-hover);
 }
 
 @media only screen and (max-width: 600px){
@@ -146,52 +147,27 @@ header{
 }
 
 /* --- Footer --- */
-footer h2{
+footer h1{
     font-family: var(--ff-heading);
     font-size: var(--fs-footer);
 }
+
+.footer-item{
+    padding: 20px;
+}
+
 #footer-grid{
-    display: grid;
-    place-items: center;
-    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 5% 30%;
-    margin-top: 7%;
+    display: flex;
+    /* place-items: center; */
+    margin: 2% 2% 3vh 2%;
 }
 @media only screen and (max-width:600px){
     #footer-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         margin: 10% 0;
     }
 }
-.social-media-icon{
-    aspect-ratio: 1/1;
-    height: 100px;
-    border: 1px solid black;
-}
-#social-media-icon-1{
-    background-image: url(Icons/ri_instagram-fill.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: none;
-}
-#social-media-icon-2{
-    background-image: url(Icons/bi_linkedin.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: none;
-}
-#social-media-icon-3{
-    background-image: url(Icons/heroicons-solid_mail.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: none;
-}
-@media only screen and (max-width:600px){
-    .social-media-icon{
-        height: 60px;
-    }
-}
-
 /* --- Bubble background --- */
 #bubble_Background_container{
     position: fixed;

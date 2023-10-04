@@ -30,7 +30,7 @@
 }
 
 #about-description{
-    margin-left: 50px ;
+    margin-left: 20px ;
     width: 100%;
 }
 @media only screen and (max-width:600px){
@@ -41,7 +41,8 @@
 #about-description p{
     font-family: var(--ff-heading);
     font-size: var(--fs-paragraph);
-    margin-top: 10px;
+    margin-top: 5px;
+    overflow-wrap: break-word;
 
 }
 

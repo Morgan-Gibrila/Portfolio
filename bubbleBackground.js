@@ -38,11 +38,11 @@ function setup(){
     colorPalette[2][4] = color('#B8336A');
 
     // - Forth pallet - 
-    colorPalette[3][0] = color(''); 
-    colorPalette[3][1] = color(''); 
-    colorPalette[3][2] = color(''); 
-    colorPalette[3][3] = color(''); 
-    colorPalette[3][4] = color(''); 
+    colorPalette[3][0] = color('#ffffff'); 
+    colorPalette[3][1] = color('#2a52be'); 
+    colorPalette[3][2] = color('#ff5349'); 
+    colorPalette[3][3] = color('#6082b6'); 
+    colorPalette[3][4] = color('#E1B7BF'); 
 
     // - Fifth pallet - 
     colorPalette[4][0] = color(''); 

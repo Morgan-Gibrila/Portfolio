@@ -15,7 +15,7 @@
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-    background-color: coral;
+    background-color: rgb(38, 38, 38);
     transition: transform 100ms ease;
 }
 
@@ -23,44 +23,3 @@
     transform: scale(1.05);
     box-shadow: 0px 0px 10px;
 }
-
-/* #photo-card-1{
-    background-color: red;
-    background-image: url(images/000016.webp);
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-    background-size: contain; 
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#photo-card-2{
-    background-color: green;
-    background-image: url(images/000029.webp);
-    background-size: contain;
-    background-position: center;
-}
-#photo-card-3{
-    background-color: blue;
-    background-image: url(images/000032.webp);
-    background-size: contain;
-    background-position: center;
-}
-#photo-card-4{
-    background-color: yellow;
-    background-image: url(images/000036.webp);
-    background-size: contain;
-    background-position: center;
-}
-#photo-card-5{
-    background-color: purple;
-    background-image: url(images/000042.webp);
-    background-size: contain;
-    background-position: center;
-}
-#photo-card-6{
-    background-color: pink;
-    background-image: url(images/000045.webp);
-    background-size: contain;
-    background-position: center;
-} */

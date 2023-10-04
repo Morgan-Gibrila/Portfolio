@@ -101,20 +101,20 @@
     /* background-image: url(); */
     background-size: cover;
     background-repeat: none;
-    background-color: rgb(255, 120, 120);
+    background-color: rgb(38, 38, 38);
 }
 
 #project-card-2{
     /* background-image: url(); */
     background-size: cover;
     background-repeat: none;
-    background-color: rgb(122, 255, 122);
+    background-color: rgb(38, 38, 38);
 }
 #project-card-3{
     /* background-image: url(); */
     background-size: cover;
     background-repeat: none;
-    background-color: rgb(122, 122, 255);
+    background-color: rgb(38, 38, 38);
 }
 
 
