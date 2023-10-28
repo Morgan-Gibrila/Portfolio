@@ -67,14 +67,14 @@ p{
 .project-image{
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    height: 46vh;
+    width: 47vw;
     aspect-ratio: 16/9;
     margin: 10px;
 }
 #project-image-group-scroll .project-image{
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    height: 50vh;
+    width: 50vw;
     aspect-ratio: 16/9;
     margin: 10px;
 }
@@ -87,10 +87,10 @@ p{
 
 @media only screen and (max-width:600px){
     .project-image{
-        height: 20vh;
+        width: 90vw;
     }
     #project-image-group-scroll .project-image{
-        height: 20vh;
+        width: 90vw;
     }
     #project-image-group{
         display: grid;
