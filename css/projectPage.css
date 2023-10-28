@@ -3,7 +3,10 @@
 :root{
     --ff-heading: 'kanit', sans-serif;
     --fs--heading: 2.4rem;
-    --fs-paragraph: 1.3rem;
+    --fs--header-2: 2rem;
+    --fs--header-3: 1.7rem;
+    --fs--image-title: 1.5rem;
+    --fs-paragraph: 1.4rem;
     --pf-sz: 30vw;
 }
 @media only screen and (max-width:600px){
@@ -12,40 +15,74 @@
         --fs-paragraph: 1.2rem;
     }
 }
-#project-title{
+.project-title{
     font-family: var(--ff-heading);
     font-size: var(--fs--heading);
     margin-top: 5vh ;
     margin-left: 5vw;
 }
+.project-header-2{
+    font-family: var(--ff-heading);
+    font-size: var(--fs--header-2);
+    margin-top: 2vh ;
+    margin-left: 5vw;
+}
+.project-header-3{
+    font-family: var(--ff-heading);
+    font-size: var(--fs--header-3);
+    margin-top: 1vh ;
+    margin-left: 6vw;
+}
 .project-text-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 10px;
-    margin: 15px 2%;
+    margin: 0 2%;
 }
-.main_text_grid_text_no_vert{
+.project-text-grid p{
+    margin-top:10px ;
+}
+
+.main_text_grid_text{
     text-align: justify;
     overflow-wrap: break-word;
-    margin: 0 3%;
+    margin: 5px 3%;
 }
-.main_text_grid_text_no_vert p{
+p{
     font-family: var(--ff-heading);
     font-size: var(--fs-paragraph);
 }
 
 #project-image-group{
     display: flex;
+    justify-content: center;
+    margin: 2%;
+}
+#project-image-group-scroll{
+    display: flex;
     overflow-x: scroll;
     margin: 2%;
 }
 
 .project-image{
-    background-color: blueviolet;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    height: 46vh;
+    aspect-ratio: 16/9;
+    margin: 10px;
+}
+#project-image-group-scroll .project-image{
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     height: 50vh;
     aspect-ratio: 16/9;
     margin: 10px;
+}
+
+.project-image-title{
+    margin-left:10px;
+    font-family: var(--ff-heading);
+    font-size: var(--fs--image-title);    
 }
 
 @media only screen and (max-width:600px){
