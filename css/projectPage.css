@@ -89,5 +89,14 @@ p{
     .project-image{
         height: 20vh;
     }
+    #project-image-group-scroll{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+    #project-image-group-scroll-scroll{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
 }
 /* --- Nuke zone --- */
