@@ -73,7 +73,7 @@ header{
     justify-content: flex-end;
 }
 
-#logo{
+#logo {
     font-family: var(--ff-heading);
     margin-right: auto;
     margin-left: 2%;
@@ -143,6 +143,9 @@ header{
         /* position: absolute; */
         right: 0;
         top: 0;
+    }
+    .project-card:hover{
+        transform: none;
     }
 }
 

@@ -19,7 +19,7 @@
     transition: transform 100ms ease;
 }
 
-.photo-card:hover{
+/* .photo-card:hover{
     transform: scale(1.05);
     box-shadow: 0px 0px 10px;
-}
+} */
