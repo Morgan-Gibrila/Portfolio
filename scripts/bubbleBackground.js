@@ -11,12 +11,13 @@ function setup(){
     cnv.parent("bubble_Background_container");
     
     // creating 2D array for color sets
-    for ( let i = 0; i <5; i++){
+    for ( let i = 0; i <6; i++){
         colorPalette[i] = [];
     }
-
+    
     // --- Setting color pallets ---
-
+    
+    let selectedPalette;
     // - First pallet - 
     colorPalette[0][0] = color('#ee82ee'); 
     colorPalette[0][1] = color('#3cb371'); 
@@ -46,14 +47,25 @@ function setup(){
     colorPalette[3][4] = color('#E1B7BF'); 
 
     // - Fifth pallet - 
-    colorPalette[4][0] = color(''); 
-    colorPalette[4][1] = color(''); 
-    colorPalette[4][2] = color(''); 
-    colorPalette[4][3] = color(''); 
-    colorPalette[4][4] = color('');
+    colorPalette[4][0] = color('#000000'); 
+    colorPalette[4][1] = color('#000000'); 
+    colorPalette[4][2] = color('#000000'); 
+    colorPalette[4][3] = color('#000000'); 
+    colorPalette[4][4] = color('#000000');
+
+    //- Pastry Knight - 
+    colorPalette[5][0] = color('#f4f192'); 
+    colorPalette[5][1] = color('#e57f8a'); 
+    colorPalette[5][2] = color('#7492a6'); 
+    colorPalette[5][3] = color('#fffedd'); 
+    colorPalette[5][4] = color('#c3daed');
 
     // - Selecting a random palette - 
-    let selectedPalette = Math.round(random(3));
+    if(document.title == "Project - Pastry Knight"){
+        selectedPalette = 5;
+    }else{
+        selectedPalette = Math.round(random(3));
+    }
     console.log("color palette: " + selectedPalette);
 
     // - Set first color of color pallet as accent/hover color - 

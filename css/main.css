@@ -184,4 +184,5 @@ footer h1{
     position: fixed;
     z-index: -10;
     filter: blur(100px);
+    overflow: visible;
 }
