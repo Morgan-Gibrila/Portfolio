@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/project-page.css">
         <script src="scripts/bubble-background.js"></script>
+
     </head>
     <body>
         <div id="bubble_Background_container"></div>
@@ -36,12 +37,34 @@
             <p>For 6 months I worked on the making of Pastry Knight, a rogue-like / dungeon crawler reminiscent adventure that follows the brave Pastry Knight on his tumultuous path to rescuing his daughter, as part of Game development minor. During this period I learnt the programming language C# and work using the game editor Unity.</p>
             
             <p>In my team I was in charge of designing and coding the any UI / HUD the game had, but I was also involved in: the storytelling of the game, flow of the story, coding some of the game mechanics used in game.</p>
-               
 
-            <div id="project-image-group">
-                <img class="project-image" src="images/PastryKnight/Pastry Knight Bakery SplashScreen.png" alt="">
-                <img class="project-image" src="images/PastryKnight/Pastry Knight Strawberry Fields.png" alt="">
+            
+            <div class="carousel">
+                <button class="carousel-button carousel-button--left">
+                    <img src="images/svg/Arrow Left icon.svg" alt="">
+                </button>
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide">
+                            <img class="project-image" src="images/PastryKnight/Pastry Knight Bakery SplashScreen.png" alt="">
+                        </li>
+                        <li class="carousel-slide">
+                            <img class="project-image" src="images/PastryKnight/Pastry Knight Strawberry Fields.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <button class="carousel-button carousel-button--right">
+                    <img src="images/svg/Arrow Right icon.svg" alt="">
+                </button>
             </div>
+
+            <div class="carousel-nav">
+                <button class="carousel-indicator current-slide"></button>
+                <button class="carousel-indicator"></button>
+            </div>
+
+            <!-- <div id="project-image-group">
+            </div> -->
             <!-- ------------------------------------------ -->
             <h2>The process</h2>
             <p>Once a team was established we all: brainstormed ideas for a story we would like to tell, made a collection of games genre we love, and a collection of games aesthetic we want our game to have.</p>
@@ -150,4 +173,8 @@
         </main>
 
     </body>
+
+    <script src="scripts/carousel.js"></script>
+    <script src="scripts/bubble-background.js"></script>
+
 </html>
