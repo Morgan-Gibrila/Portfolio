@@ -3,12 +3,16 @@
     --ff-heading: 'kanit', sans-serif;
     --fs-heading: 2.5rem;
     --fs-work-title: 1.8rem;
+    --fs-paragraph: 1.5rem;
+    --pf-sz: 30vw;
 }
 
 @media only screen and (max-width: 600px) {
     :root{
         --fs-heading: 2rem;
         --fs-work-title: 1.5rem;
+        --pf-sz:90vw;
+        --fs-paragraph: 1.2rem;
     }
 }
 
@@ -93,6 +97,58 @@
 .home-introduction-hobbies-grid{
     display: grid;
     grid-template-columns: 30px 1fr min-content;
+}
+
+#about{
+    background-color: rgb(44, 44, 44);
+}
+.about-content-grid{
+    display: grid;
+    grid-template-columns: var(--pf-sz) 60vw ;
+    width: 90%;
+    margin: 0% 5% 0 5%;
+    padding: 20px;
+} 
+@media only screen and (max-width:600px){
+    .about-content-grid{
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) ;
+    } 
+}
+#profile-pic{
+    aspect-ratio: 1/1;
+    width: var(--pf-sz);
+    border-radius: 10px;
+    object-fit:cover;
+}
+
+#about-description{
+    margin-left: 20px;
+    width: min(100% - 2 rem, 90ch);
+}
+@media only screen and (max-width:600px){
+    #about-description{
+        margin-left: 0 ;
+    }
+}
+#about-description p{
+    margin: 10px;
+    color: rgb(248, 246, 231);
+    font-family: var(--ff-heading);
+    font-size: var(--fs-paragraph);
+    overflow-wrap: break-word;
+    vertical-align: middle;
+}
+
+
+.about-action-button{
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: rgb(248, 246, 231); ;
+}
+.about-action-button-container{
+    display: flex;
+    gap: 30px;
+    margin-top: 2%;
 }
 
 /* --- Animeation --- */

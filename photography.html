@@ -6,58 +6,64 @@
         <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/photography.css">
-        <script src="scripts/bubble-background.js"></script>
     </head>
     <body>
         <div id="bubble_Background_container"></div>
         <header>
             <a href="index.html" title="Home" id="logo"> <h1 id="logo">MG</h1> </a>
             <nav class="navbar">
-                    <ul class="nav-menu">
-                        <li class="nav-items">
-                            <a href="projects.html" class="nav-link">Projects</a>
-                        </li>
-                        <li class="nav-link-dividers">|</li>
-                        <li class="nav-items">
-                            <a href="#" class="nav-link" id="nav-active" >Photography</a>
-                        </li>
-                        <li class="nav-link-dividers">|</li>
-                        <li class="nav-items" >
-                            <a href="about.html" class="nav-link" >About Me</a>
-                        </li>
-                    </ul>
+                <ul class="nav-menu">
+                    <li class="nav-items">
+                        <a href="projects.html" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-link-dividers">|</li>
+                    <li class="nav-items">
+                        <a href="#" class="nav-link" id="nav-active" >Photography</a>
+                    </li>
+                </ul>
             </nav>
-           
+            
         </header>
-
+        
         <div id="photo-grid">
-
-            <div class="photo-card-container">
+            
+            <button class="photo-card-container" id="first" onclick="Resize('first')">
                 <img class="photo-card" id="photo-card-1" src="images/000016.webp" alt="">
-            </div>
-
-            <div class="photo-card-container">
+            </button>
+            
+            <button class="photo-card-container" id="second" onclick="Resize('second')">
                 <img class="photo-card" id="photo-card-1" src="images/000029.webp" alt="">
-            </div>
-
-            <div class="photo-card-container">
+            </button>
+            
+            <button  class="photo-card-container" id="third" onclick="Resize('third')">
                 <img class="photo-card" id="photo-card-1" src="images/000032.webp" alt="">
-            </div>
-            <div class="photo-card-container">
+            </button>
+            
+            <button  class="photo-card-container" id="fourth" onclick="Resize('fourth')">
                 <img class="photo-card" id="photo-card-1" src="images/000036.webp" alt="">
-            </div>
-
-            <div class="photo-card-container">
+            </button>
+            
+            <button  class="photo-card-container" id="fifth" onclick="Resize('fifth')">
                 <img class="photo-card" id="photo-card-1" src="images/000042.webp" alt="">
-            </div>
-
-            <div class="photo-card-container">
+            </button>
+            
+            <button  class="photo-card-container" id="sixth" onclick="Resize('sixth')">
                 <img class="photo-card" id="photo-card-1" src="images/000045.webp" alt="">
-            </div>
+            </button>
+            
+            <button  class="photo-card-container" id="seventh" onclick="Resize('seventh')">
+                <img class="photo-card" id="photo-card-1" src="images/000015.jpg" alt="">
+            </button>
 
-
+            <!-- <button  class="photo-card-container" id="seventh" onclick="Resize('seventh')">
+                <img class="photo-card" id="photo-card-1" src="images/IMG_1419.jpeg" alt="">
+            </button> -->
+            
+            
         </div>
         
-        </div>
-    </body>
+    </div>
+</body>
+<script src="scripts/bubble-background.js"></script>
+
 </html>
