@@ -1,53 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;600;700&display=swap');
-
 :root{
-    --ff-heading: 'kanit', sans-serif;
-    --fs--heading: 2.4rem;
-    --fs--header-2: 2rem;
-    --fs--header-3: 1.7rem;
     --fs--image-title: 1.5rem;
-    --fs-paragraph: 1.4rem;
-    --pf-sz: 30vw;
-
-    --cl-hover: #ffffff;
-}
-@media only screen and (max-width:600px){
-    :root{
-        --pf-sz:90vw;
-        --fs-paragraph: 1.2rem;
-    }
 }
 main{
+    padding: 20px;
+}
+#TaskApp,li:not(.nav-link-dividers, .nav-items){
+    background-color: rgb(44, 44, 44);
+    color: rgb(253, 255, 221);
+}
+#pastryKnight{
+    background-color: rgb(233, 72, 76);
+    color: rgb(253, 255, 221);
+}
+#PS1{
+ background-color: rgb(255, 255, 255);
+}
+.project-text{
+    margin: 0 auto;
     width: min(100% - 2rem, 90ch);
+}
+li:not(.nav-link-dividers, .nav-items){
+    margin-left: 50px;
+}
+/* #project-poster{
+    object-fit:cover;
+    object-position: top;
+    width: 100vw;
+    height: 80vh; 
+} */
+.project-intro-container{
+    display: grid;
+    grid-template-columns: 35vw 60vw ;
+    width: 90%;
+    margin: 0% 5% 0 5%;
+    padding:  50px 0;
+}
+.project-intro-image{
     margin: auto;
+    aspect-ratio: 16/9;
+    border-radius: 10px;
+    width: 50vw;
+    background-position:center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 100ms ease;
 }
-h1:not(#logo){
-    font-family: var(--ff-heading);
-    font-size: var(--fs--heading);
-    /* margin-top: 5vh ; */
-    /* margin-left: 5vw; */
+.project-intro{
+    /* margin-left: 20px; */
+    width: min(100% - 2 rem, 90ch);
 }
-
-h2{
-    font-family: var(--ff-heading);
-    font-size: var(--fs--header-2);
-    /* margin-top: 2vh ; */
-    /* margin-left: 5vw; */
-}
-h3{
-    font-family: var(--ff-heading);
-    font-size: var(--fs--header-3);
-    /* margin-top: 1vh ; */
-    /* margin-left: 6vw; */
-}
-p{
-    text-align: justify;
-    overflow-wrap: break-word;
-    /* margin: 20px 3%; */
-    font-family: var(--ff-heading);
-    font-size: var(--fs-paragraph);
-}
-
 
 .project-image{
     background-color: rgb(255, 255, 255);
@@ -110,12 +111,12 @@ p{
   
   /* Handle */
   .project-image-group-snap-scroll::-webkit-scrollbar-thumb {
-    background: var(--cl-hover);
+    background: var(--cl-scroll);
   }
   
   /* Handle on hover */
   .project-image-group-snap-scroll::-webkit-scrollbar-thumb:hover {
-    background-color: var(--cl-hover);
+    background-color: var(--cl-scroll);
   }
 
 /* --- Nuke zone --- */

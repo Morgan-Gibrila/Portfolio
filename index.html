@@ -8,22 +8,25 @@
         <link rel="stylesheet" href="css/home.css">
         <script src="scripts/bubble-background.js"></script>
     </head>
+    <header>
+        <a href="index.html" title="Home" id="logo"> <h1 id="logo">MG</h1> </a>
+
+        <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-items">
+                        <a href="projects.html" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-link-dividers">|</li>
+                    <li class="nav-items">
+                        <a href="photography.html" class="nav-link">Photography</a>
+                    </li>
+                </ul>
+        </nav>
+        
+    </header>
     <body>
         <div id="bubble_Background_container"></div>
-        <header>
-            <a href="index.html" title="Home" id="logo"> <h1 id="logo">MG</h1> </a>
-            <nav class="navbar">
-                    <ul class="nav-menu">
-                        <li class="nav-items">
-                            <a href="projects.html" class="nav-link">Projects</a>
-                        </li>
-                        <li class="nav-link-dividers">|</li>
-                        <li class="nav-items">
-                            <a href="photography.html" class="nav-link">Photography</a>
-                        </li>
-                    </ul>
-            </nav>
-        </header>
+        
         <div id="home-intoduction">
             <p>Hi, I'm <b>Morgan Gibrila</b></p>
             <p>I am a <b>UI / UX Designer</b> </p>
@@ -44,33 +47,55 @@
             </div>
         </div>
         <hr id="DividerLine">
-        <div id="WorkTitle">
-            <h1>Recent Work</h1>
+        <div >
+            <h1 id="WorkTitle">Recent Work</h1>
         </div>
 
-        <div id="project-grid">
+        <div id="big-project-card-1">
+            <div class="big-project-card-container">
 
-            <div class="project-card-container">
-                <div class="project-card" id="project-card-1" style="background-image: url(images/PastryKnight/PastryKnight-Env1StrawberryFields-2-11-22.png);">
+                <div class="big-project-card-image" style="background-image: url(images/TaskApp/Poster.png);">
+                    <a href="TaskApp.html"><button class='grid-button'></button></a>
+                </div>
+
+                <div id="big-project-card-about-description">
+                    <h1 class="big-project-card-title">Task App</h1>
+                    <p>There are hundreds of tasks managing apps, but personally they do not really fit my needs. I alwasy have to break my work flow to view my next task, so I'm embarking on an adventure and design my ideal task management app.</p>
+                    <a href="TaskApp.html"><button class="view-project-button" >Read more</button></a>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="big-project-card-2">
+            <div class="big-project-card-container">
+
+                <div id="big-project-card-about-description">
+                    <h1 class="big-project-card-title">Pastry Knight</h1>
+                    <p>I worked on the making of Pastry Knight, a rogue-like / dungeon crawler reminiscent adventure that follows the brave Pastry Knight on his tumultuous path to rescuing his daughter, as part of Game development minor</p>
+                    <a href="pastry-knight.html"><button class="view-project-button">Read more</button></a>
+                </div>
+
+                <div class="big-project-card-image" style="background-image: url(images/PastryKnight/PastryKnight-Env1StrawberryFields-2-11-22.png);">
                     <a href="pastry-knight.html"><button class='grid-button'></button></a>
                 </div>
-                <h1 class="project-card-title">Pastry Knight</h1>
-            </div>
 
-            <div class="project-card-container">
-                <div class="project-card" id="project-card-2" style="background-image: url(images/PS1/Coworking\ Office\ Cartoon.png);">
+           </div>
+        </div>
+
+        <div id="big-project-card-3">
+            <div class="big-project-card-container">
+                <div class="big-project-card-image" style="background-image: url(images/PS1/Coworking\ Office\ Cartoon.png);">
                     <a href="project-shared-spaces.html"><button class='grid-button'></button></a>
                 </div>
-                <h1 class="project-card-title">Project Shared Spaces</h1>
-            </div>
-
-            <!-- <div class="project-card-container">
-                <div class="project-card" id="project-card-3">
-                    <a href=""><button class='grid-button'></button></a>
+                <div id="big-project-card-about-description">
+                    <h1 class="big-project-card-title">Project shared spaces</h1>
+                    <p>Project shared spaces aims to create a space that can take full advantage of face-to-face interaction as well as interactive digital technologies to develop a user-centered solution to address the challenge of low citizen engagement in government decision-making processes.</p>
+                    <a href="project-shared-spaces.html"><button class="view-project-button">Read more</button></a>
                 </div>
-                <h1 class="project-card-title">Project Title</h1>
-            </div> -->
+           </div>
         </div>
+
         <div id="about">
             <div class="about-content-grid">
                 <img id="profile-pic" src="images/IMG_1280.png" alt="">

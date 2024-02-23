@@ -70,7 +70,6 @@ function setup(){
 
     // - Set first color of color pallet as accent/hover color - 
     accentColor.style.setProperty('--cl-hover',colorPalette[selectedPalette][1]);
-
     // --- Instanciating bubbles & Setting each to one to a color from a pallet --- 
     for ( let i = 0; i < maxBubbles; i++){
         
@@ -86,7 +85,7 @@ function setup(){
 }
 
 function draw(){
-    background(255);
+    background(255, 250, 227);
     // --- Updating mouse possition vector --- 
     updateMousePos(mouseX,mouseY);
 
