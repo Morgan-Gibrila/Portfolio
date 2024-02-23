@@ -128,10 +128,18 @@
     /* margin-left: 20px; */
     width: min(100% - 2 rem, 90ch);
 }
+
 @media only screen and (max-width:600px){
+    .big-project-card-container{
+        display: block;
+    }
     .big-project-card-about-description{
         margin-left: 0 ;
     }
+    .big-project-card-image{
+        width: 90vw;
+    }
+
 }
 #big-project-card-about-description p{
     margin: 10px 0;
@@ -144,13 +152,13 @@
 
 
 /* --- Big project cards background --- */
-#big-project-card-1{
+.big-project-card-1{
     background-color: rgb(44, 44, 44);
 }
-#big-project-card-2{
+.big-project-card-2{
     background-color: rgb(233, 72, 76);
 }
-#big-project-card-3{
+.big-project-card-3{
     background-color: rgb(177, 177, 177);
 }
 
