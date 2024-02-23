@@ -49,12 +49,25 @@ li:not(.nav-link-dividers, .nav-items){
     /* margin-left: 20px; */
     width: min(100% - 2 rem, 90ch);
 }
+
+#show-mobile{
+    display: none;
+}
+#hide-mobile{
+    display: grid;
+}
 @media only screen and (max-width:600px){
     .project-intro-container{
         display: block;
     }
     .project-intro-image{
         width: 90vw;
+    }
+    #show-mobile{
+        display: block;
+    }
+    #hide-mobile{
+        display: none;
     }
 }
 
@@ -97,6 +110,7 @@ li:not(.nav-link-dividers, .nav-items){
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
+    
 }
 
 /* --- Test zone --- */

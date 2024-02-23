@@ -71,20 +71,8 @@ li, a {
     text-decoration: none;
 }
 
-#show-mobile{
-    display: none;
-}
-#hide-mobile{
-    display: block;
-}
-@media only screen and (max-width:600px){
-    #show-mobile{
-        display: block;
-    }
-    #hide-mobile{
-        display: none;
-    }
-}
+
+
 
 /* --- Project cards --- */
 #project-grid{

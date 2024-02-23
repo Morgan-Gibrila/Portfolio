@@ -129,6 +129,13 @@
     width: min(100% - 2 rem, 90ch);
 }
 
+#show-mobile{
+    display: none;
+}
+#hide-mobile{
+    display: block;
+}
+
 @media only screen and (max-width:600px){
     .big-project-card-container{
         display: block;
@@ -138,6 +145,12 @@
     }
     .big-project-card-image{
         width: 90vw;
+    } 
+    #show-mobile{
+        display: block;
+    }
+    #hide-mobile{
+        display: none;
     }
 
 }
