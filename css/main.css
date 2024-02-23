@@ -71,6 +71,21 @@ li, a {
     text-decoration: none;
 }
 
+#show-mobile{
+    display: none;
+}
+#hide-mobile{
+    display: block;
+}
+@media only screen and (max-width:600px){
+    #show-mobile{
+        display: block;
+    }
+    #hide-mobile{
+        display: none;
+    }
+}
+
 /* --- Project cards --- */
 #project-grid{
     display: grid;
@@ -162,9 +177,7 @@ header{
 
 @media only screen and (max-width: 600px){
     header{
-        /* overflow: hidden; */
-        /* position: relative; */
-        /* display: block; */
+        margin: 0 10px;
     }
     .nav-link-dividers{
         visibility: hidden;
