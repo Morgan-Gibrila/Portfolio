@@ -4,16 +4,26 @@
 /* --- Variables --- */
 :root{
     --ff-heading: 'kanit', sans-serif;
-    --fs-nav: 1.9rem;
+    --fs--heading: 2rem;
+    --fs--header-2: 1.7rem;
+    --fs--header-3: 1.5rem;
+
+    --fs-paragraph: 1.4rem;
+
+    --fs-nav: 1.7rem;
     --fs-footer:2.3rem;
     --fs-project-card-title: 2rem;
     --cl-hover: #ffffff;
+    --cl-scroll: #bbbbbb;
+
 }
 @media only screen and (max-width:600px){
     :root{
         --fs-nav: 1.5rem;
+        --fs-nav-divider: 1.1rem;
         --fs-footer:1.1rem;
         --fs-project-card-title: 1.8rem;
+        --fs-paragraph: 1.2rem;
     }
 }
 
@@ -28,8 +38,35 @@ body{
     width: 100%;
 }
 
-li, a{
+h1:not(#logo, #WorkTitle){
+    font-family: var(--ff-heading);
+    font-size: var(--fs--heading);
+
+}
+
+h2{
+    font-family: var(--ff-heading);
+    font-size: var(--fs--header-2);
+
+}
+h3{
+    font-family: var(--ff-heading);
+    font-size: var(--fs--header-3);
+}
+p{
+    text-align: justify;
+    overflow-wrap: break-word;
+    font-family: var(--ff-heading);
+    font-size: var(--fs-paragraph);
+    font-weight:400;
+}
+
+li, a :not(.nav-link-dividers, .nav-items){
     /* color: #FAFAF0;*/
+    font-size: var(--fs-paragraph);
+}
+li, a {
+    font-family: var(--ff-heading);
     color: black;
     text-decoration: none;
 }
@@ -44,13 +81,13 @@ li, a{
     /* margin-bottom: 4%; */
 }
 .project-card{
-    border-radius: 10px;
+    border-radius: 5px;
     aspect-ratio: 16 /9 ;
-    width: max;
     grid-row: 1 / -1;
     grid-column: 1 / -1;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     background-color: coral;
+    background-position:center;
     transition: transform 100ms ease;
 }
 
@@ -71,37 +108,36 @@ li, a{
     background: none;
     border: none;
 }
+
 /* --- Header --- */
 header{
     display: flex;
     justify-content: flex-end;
+    margin: 0 50px;
 }
 
 #logo {
     font-family: var(--ff-heading);
+    font-size: 2rem;
     margin-right: auto;
-    margin-left: 2%;
 }
 
 #logo:hover{
     color: var(--cl-hover);
 }
 
-.navbar{
-    margin-right: 1.5%;
-}
-
 .nav-menu{
     padding-top: 4px;
 }
 
-.nav-menu li {
+.nav-menu li:not(.nav-link-dividers) {
     display: inline-block;
     padding: 0px 10px;
 }
 
 
 .nav-link-dividers{
+    display: inline-block;
     padding: 0;
     font-size: var(--fs-nav);
 }
@@ -153,93 +189,24 @@ header{
     }
 }
 
+.view-project-button{
+    width: 10rem;
+    height: 3rem;
+    border-radius: 5px;
+    border: none;
+    margin: 10px 0;
+    font-family: var(--ff-heading);
+    font-weight:600;
+}
+.view-project-button:hover{
+    filter: invert();
+}
 /* --- Project Cards --- */
 
 .project-card{
     background-size: cover;
     background-repeat: none;
     background-color: rgb(38, 38, 38);
-}
-
-/* --- Footer --- */
-footer h1{
-    font-family: var(--ff-heading);
-    font-size: var(--fs-footer);
-}
-
-.footer-item{
-    padding: 20px;
-}
-
-#footer-grid{
-    display: flex;
-    /* place-items: center; */
-    margin: 2% 2% 3vh 2%;
-}
-@media only screen and (max-width:600px){
-    #footer-grid{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        margin: 10% 0;
-    }
-}
-
-.carousel{
-    position: relative;
-    width: 50vw;
-    aspect-ratio: 16/9;
-    margin:auto;
-}
-
-.carousel-track-container{
-    position: relative;
-    background:lightgreen;
-    /* padding: 10px; */
-    width: 100%;
-}
-.carousel-track{
-    list-style: none;
-}
-.carousel-slide{
-    position: absolute;
-    top:0;
-    bottom: 0;
-    width: 100%;
-}
-
-.carousel-button{
-    position:absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: transparent;
-    border: 0;
-    cursor: pointer;
-}
-.carousel-button--left{
-    left: -40px;
-}
-.carousel-button--right{
-    right: -40px;
-}
-.carousel-button img{
-    width: 35px;
-}
-
-.carousel-nav{
-    display: flex;
-    justify-content: center;
-    margin: 10px 0;
-}
-.carousel-indicator{
-    border: 0;
-    border-radius: 50%;
-    margin: 2px;
-    width: 15px;
-    height: 15px;
-    background: rgb(0, 0, 0,.3);
-}
-.carousel-indicator.current-slide{
-    background: rgba(0, 0, 0, 0.75);
 }
 /* --- Bubble background --- */
 #bubble_Background_container{

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project - Task App</Title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/project-page.css">
+        <script src="scripts/bubble-background.js"></script>
+
+    </head>
+    <body>
+        <div id="bubble_Background_container"></div>
+        <header>
+            <a href="index.html" title="Home" id="logo"> <h1 id="logo">MG</h1> </a>
+            <nav class="navbar">
+                    <ul class="nav-menu">
+                        <li class="nav-items">
+                            <a href="projects.html" class="nav-link">Projects</a>
+                        </li>
+                        <li class="nav-link-dividers">|</li>
+                        <li class="nav-items">
+                            <a href="photography.html" class="nav-link">Photography</a>
+                        </li>
+                    </ul>
+            </nav>
+            
+        </header>
+        <!-- ------------------------------------------ -->
+
+        <!-- <img id="project-poster" src="images/TaskApp/Desktop View.png"alt=""> -->
+        <div class="project-intro-container">
+            <div class="project-intro">
+                <h1>Reminders App</h1>
+                <br>
+                <p>There are hundreds of tasks managing apps, but personally they do not really fit my needs. I alwasy have to break my work flow to view my next task, so I'm embarking on an adventure and design my ideal task management app.</p>
+                <br>
+                <p>In this project I researched and designed my ideal task management app using Figma and will, at a late date, attempt to programme it in swift (the programming language use by macOS).</p>
+            </div>
+            <div class="project-intro-image" style="background-image: url(images/TaskApp/DesktopView.png);"></div>
+
+        </div>
+        <main id="TaskApp">
+        <div class="project-text">
+
+            <br>
+
+            <!-- <div class="project-image-group-snap-scroll">
+                <img class="project-image" src="images/PastryKnight/Pastry Knight Bakery SplashScreen.png" alt="">
+                <img class="project-image" src="images/PastryKnight/Pastry Knight Strawberry Fields.png" alt="">
+            </div> -->
+
+            <!-- ------------------------------------------ -->
+            <h2>Research</h2>
+            <p>For this project, the research will mainly be focused on competitor analysis, as this project aims to fill a void left by other task managing apps. I will also interview people who have used or are using these apps to have direct insight from someone who has a hands on experience with them.</p>
+            <br>
+            <h2>Competitive analysis</h2>
+            <p>I started by listing all the features of that that: Microsoft to do, Trello, and Kanban extension for obsidian have on in a digital board and color coded them based on the app they are from. Once I had made the list, I clustered the cards into groups of similar and same features, this helped point out the must have features from the "nice to have".</p>
+            <br>
+            <p>I found that the following features are important features that most apps have.</p>
+            <ul>
+                <li>Create, edit and delete tasks (a given)</li>
+                <li>Set a due date</li>
+                <li>Set a tick list in a task (Nice to have)</li>
+                <li>Add files (Nice to have)</li>
+                <li>Set priority level</li>
+                <li>Add notes</li>
+                <li>Create task groups</li>
+                <li>Search for task / task groups</li>
+                <li>Notifications</li>
+            </ul>
+            <br>
+
+            <h2>Interviews</h2>
+            <p>As for the interviews, most people use the calendar app on their device to keep track of what they have to do at certain hours / days but there were some outliers.</p>
+            <br>
+            <p>One of the people i interviewed used an app called Obsidian (a markdown language, note taking app). within this app they used one of the many extensions and added a Kanban (a system of having 3 or more column corresponding to a state: to do, doing, complete). Another interviewee uses a notion page where they put down all their things they have to do and ticks them as they do them.</p>
+            <br>
+            <p>When asked why they don't use other well known choices, a two people said they did not want to go through the hassle of setting up a nice planner and spending an afternoon making a system for themselves. Other feel that they have no need for other apps that may offer different things.</p>
+            <br>
+
+            <h2>My Vision</h2>
+            <p>Based on the research I have done and my personal thoughts, this app should be one that can keep track of task in a calendar style, perhaps have a different page for the days. Each page should have a customisable Kanban style space, that allows users to add task (visualised by cards) that contain the task, date, tag, and any other related things. On top of that, have the app easily accessible through the menu bar of your computer should be one of the main features.</p>
+
+        </div>
+        </main>
+
+    </body>
+    <script src="scripts/bubble-background.js"></script>
+
+</html>
