@@ -104,7 +104,7 @@
     display: grid;
     grid-template-columns: 45vw 45vw ;
     width: 90%;
-    margin: 0% 5% 0 5%;
+    margin: 0% 5%;
     padding:  50px 0;
 }
 
@@ -124,8 +124,8 @@
 .big-project-card-title{
     color: #ffffff;
 }
-.big-project-card-about-description{
-    /* margin-left: 20px; */
+#big-project-card-about-description{
+    margin: auto;
     width: min(100% - 2 rem, 90ch);
 }
 
