@@ -2,7 +2,7 @@
     --fs--image-title: 1.5rem;
 }
 main{
-    padding: 20px;
+    padding: 30px;
 }
 #TaskApp,li:not(.nav-link-dividers, .nav-items){
     background-color: rgb(44, 44, 44);
@@ -72,13 +72,13 @@ li:not(.nav-link-dividers, .nav-items){
 }
 
 .project-image{
-    background-color: rgb(255, 255, 255);
+    display: block;
+    margin: auto;
     border-radius: 10px;
-    width: 90ch;
+    width: 85vw;
     aspect-ratio: 16/9;
     scroll-snap-align: center;
     scroll-snap-stop: always;
-    margin: 0 10px;
 }
 
 
@@ -113,18 +113,17 @@ li:not(.nav-link-dividers, .nav-items){
     
 }
 
-/* --- Test zone --- */
 .project-image-group-snap-scroll{
-    margin: 10px 0 ;
+    padding: 15px;
     display: flex;
     height: auto;
+    gap: 10px;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     
 }
 .project-image-group-snap-scroll::-webkit-scrollbar {
     height: 10px;
-
   }
   
   .project-image-group-snap-scroll::-webkit-scrollbar-track {
