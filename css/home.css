@@ -2,7 +2,6 @@
 :root{
     --fs-heading: 2.5rem;
     --fs-work-title: 3rem;
-    --fs-paragraph: 1.5rem;
     --pf-sz: 30vw;
 }
 
@@ -11,7 +10,6 @@
         --fs-heading: 2rem;
         --fs-work-title: 1.5rem;
         --pf-sz:90vw;
-        --fs-paragraph: 1.2rem;
     }
 }
 
@@ -57,6 +55,7 @@
     font-size: var(--fs-work-title);
     width: fit-content;
     margin: 0 auto;
+    padding: 10px 0 ;
 }
 
 #marquee-contianer{
@@ -166,13 +165,13 @@
 
 /* --- Big project cards background --- */
 .big-project-card-1{
-    background-color: rgb(44, 44, 44);
+    background-color: rgb(30, 30, 30);
 }
 .big-project-card-2{
     background-color: rgb(233, 72, 76);
 }
 .big-project-card-3{
-    background-color: rgb(177, 177, 177);
+    background-color: rgb(55, 55, 55);
 }
 
 #about{
@@ -183,7 +182,7 @@
     grid-template-columns: var(--pf-sz) 60vw ;
     width: 90%;
     margin: 0% 5% 0 5%;
-    padding:  20px 0;
+    padding:  50px 0;
 } 
 @media only screen and (max-width:600px){
     .about-content-grid{
