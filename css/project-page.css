@@ -5,7 +5,7 @@ main{
     padding: 30px;
 }
 #TaskApp,li:not(.nav-link-dividers, .nav-items){
-    background-color: rgb(44, 44, 44);
+    background-color: rgb(30, 30, 30);
     color: rgb(253, 255, 221);
 }
 #pastryKnight{
@@ -13,7 +13,8 @@ main{
     color: rgb(253, 255, 221);
 }
 #PS1{
- background-color: rgb(255, 255, 255);
+    background-color: rgb(55, 55, 55);
+    color: rgb(253, 255, 221);
 }
 .project-text{
     margin: 0 auto;
@@ -62,6 +63,7 @@ li:not(.nav-link-dividers, .nav-items){
     }
     .project-intro-image{
         width: 90vw;
+        margin-bottom: 20px;
     }
     #show-mobile{
         display: block;
@@ -73,12 +75,13 @@ li:not(.nav-link-dividers, .nav-items){
 
 .project-image{
     display: block;
-    margin: auto;
+    margin: 20px auto;
     border-radius: 10px;
     width: 85vw;
     aspect-ratio: 16/9;
     scroll-snap-align: center;
     scroll-snap-stop: always;
+    border: none;
 }
 
 

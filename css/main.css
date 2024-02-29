@@ -8,7 +8,7 @@
     --fs--header-2: 1.7rem;
     --fs--header-3: 1.5rem;
 
-    --fs-paragraph: 1.4rem;
+    --fs-paragraph: 1.3rem;
 
     --fs-nav: 1.7rem;
     --fs-footer:2.3rem;
@@ -21,9 +21,8 @@
     :root{
         --fs-nav: 1.5rem;
         --fs-nav-divider: 1.1rem;
-        --fs-footer:1.1rem;
         --fs-project-card-title: 1.8rem;
-        --fs-paragraph: 1.2rem;
+        --fs-paragraph: 1.1rem;
     }
 }
 
@@ -116,7 +115,7 @@ li, a {
 header{
     display: flex;
     justify-content: flex-end;
-    margin: 0 50px;
+    padding: 10px 50px;
 }
 
 #logo {
@@ -166,6 +165,7 @@ header{
 @media only screen and (max-width: 600px){
     header{
         margin: 0 10px;
+        padding: 0;
     }
     .nav-link-dividers{
         visibility: hidden;
