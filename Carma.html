@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project - Carma</Title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/project-page.css">
+    </head>
+    <style>
+        h2{
+            color: #F1A7BD;
+        }
+    </style>
+    <body>
+        <div id="bubble_Background_container"></div>
+        <header>
+            <a href="index.html" title="Home" id="logo"> <h1 id="logo">MG</h1> </a>
+            <nav class="navbar">
+                    <ul class="nav-menu">
+                        <li class="nav-items">
+                            <a href="projects.html" class="nav-link">Projects</a>
+                        </li>
+                        <li class="nav-link-dividers">|</li>
+                        <li class="nav-items">
+                            <a href="photography.html" class="nav-link">Photography</a>
+                        </li>
+                    </ul>
+            </nav>
+            
+        </header>
+        <!-- ------------------------------------------ -->
+
+        <!-- <img id="project-poster" src="images/TaskApp/Desktop View.png"alt=""> -->
+        <div class="project-intro-container" id="hide-mobile">
+            <div class="project-intro">
+                <h1>Carma</h1>
+                <p> add description</p>
+            </div>
+            <div class="project-intro-image" style="background-image: url(images/TaskApp/DesktopView.png);"></div>
+        </div>
+        
+        <div class="project-intro-container" id="show-mobile">
+            <div class="project-intro-image" style="background-image: url(images/TaskApp/DesktopView.png);"></div>
+            <div class="project-intro">
+                <h1>Reminders App</h1>
+                <p>There are hundreds of tasks managing apps, but personally they do not really fit my needs. I alwasy have to break my work flow to view my next task, so I'm embarking on an adventure and design my ideal task management app.</p>
+                <br>
+                <p>In this project I researched and designed my ideal task management app using Figma and will, at a late date, attempt to programme it in swift (the programming language use by macOS).</p>
+            </div>
+        </div>
+
+        <main id="TaskApp">
+            <div class="project-text">
+                <h2>Research</h2>
+                <p>For this project, the research will mainly be focused on competitor analysis, as this project aims to fill a void left by other task managing apps. I will also interview people who have used or are using these apps to have direct insight from someone who has a hands on experience with them.</p>
+                <br>
+
+                <h2>Competitive analysis</h2>
+                <p>I started by listing all the features of that that: Microsoft to do, Trello, and Kanban extension for obsidian have on in a digital board and color coded them based on the app they are from. Once I had made the list, I clustered the cards into groups of similar features, this helped point out the must have features from the "nice to have".</p>
+            </div>
+
+            <img class="project-image" src="images/TaskApp/competitive-testing.png" alt="">
+
+            <div class="project-text">
+                <h2>Interviews</h2>
+                <p>As for the interviews, most people use the calendar app on their device to keep track of what they have to do at certain hours / days for all sorts of activities. Depending on the use, a Kanban alternative is used by some people when it comes to work.</p>
+                <br>
+                <p>Some people used Obsidian (a markdown language, note taking app), such as an interviewee and myself, other used notion when working on projects. Most are satisfied their choice and the others do not want to go through the hassle of finding an app that solves their minor inconvenience</p>
+                <br>
+
+                <h2>The Vision</h2>
+                <p>With the data collected and the features listed, I explored all the different apps and collected the features from each apps and selceted my favorites and made a collage.</p>
+            </div>
+            
+            <img class="project-image" src="images/TaskApp/collage.png" alt="">
+            
+            <div class="project-text">
+                <h2>Wireframes</h2>
+                <p>With a direction as a guide I could move onto making the the wireframes. I planned the different framnes needed: the app itself, adding a task pop-up window, and the menu bar drop down.</p>
+            </div>
+            
+            <img class="project-image" src="images/TaskApp/Wireframe.png" alt="">
+
+            <div class="project-text">
+                <h2>Prototyping</h2>
+                <p>As the prototyping fase is quite a long one, it keeps being updated as new thoughts come to mind and feedback is recieved. Below you will find the first iterations of the hi-fi prototype showcasign the main features whhich I deem as the minimum to make this app functional in the intended way.</p>
+            </div>
+            
+            <div class="project-image-group-snap-scroll">
+                <img class="project-image" src="images/TaskApp/Empty library.png" alt="">
+                <img class="project-image" src="images/TaskApp/Empty task group.png" alt="">
+                <img class="project-image" src="images/TaskApp/Adding task.png" alt="">
+                <img class="project-image" src="images/TaskApp/Desktop drop down.png" alt="">
+            </div>
+            
+            <p style="font-weight: 300; font-style: italic; ">This project is still in works and will be updated</p>
+        </main>
+    </body>
+    <script src="scripts/bubble-background.js"></script>
+
+</html>
